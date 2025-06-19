@@ -1,4 +1,4 @@
-function showSignIn() {
+    function showSignIn() {
     document.querySelector(".singIn").style.display = "block";
     document.querySelector(".singUp").style.display = "none";
 }
