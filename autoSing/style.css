@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button {
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1447px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__collection {
+    display: flex;
+    gap: 30px;
+    color: #1DB4D6;
+}
+
+.navBtn {
+    display: flex;
+    gap: 30px;
+}
+
+.navBtn button {
+    padding: 10px 20px;
+    background-color: #1DB4D6;
+    color: white;
+    border: 2px solid #1DB4D6;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navBtn button:hover {
+    background-color: white;
+    color: #1DB4D6;
+}
+
+.singIn,
+.singUp {
+    display: none;
+    width: 400px;
+    position: absolute;
+    top: 160px;
+    right: 180px;
+    border: 1px solid #1DB4D6;
+    background-color: #1DB4D6;
+    border-radius: 15px;
+    padding: 20px 30px;
+    z-index: 999;
+}
+
+.singIn {
+    height: 350px;
+}
+
+.singUp {
+    height: 410px;
+}
+
+.singIn p,
+.singUp p {
+    color: #4B4B4B;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.singIn input,
+.singUp input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.inputBtn {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.inputBtn button {
+    padding: 10px 60px;
+    background-color: #4B4B4B;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultText {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

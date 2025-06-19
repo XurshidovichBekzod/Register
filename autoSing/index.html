@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <header class="container">
+        <nav class="navbar">
+            <div>
+                <img src="./img/Frame (7).svg" alt="" />
+            </div>
+            <ul class="nav__collection">
+                <li><a href="#"><span>Home</span></a></li>
+                <li><a href="#"><span>Products</span></a></li>
+                <li><a href="#"><span>Feature</span></a></li>
+                <li><a href="#"><span>About</span></a></li>
+            </ul>
+            <div class="navBtn">
+                <button onclick="showSignIn()" id="signInBtn">Sign in</button>
+                <button onclick="showSignUp()" id="signUpBtn">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <img width="829px" style="margin-top: 10px;" src="./img/Frame (8).svg" alt="" />
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="singIn" style="display: none;">
+            <p>Sign Into <br /> Your Account</p>
+            <input id="singInEmail" type="email" placeholder="Enter Your Email" />
+            <input id="singInPassword" type="password" placeholder="Password" />
+            <div class="inputBtn">
+                <button onclick="signINfunc()">Enter</button>
+                <button id="closeBtn" onclick="closeForms()">Close</button>
+            </div>
+            <p id="resultText"></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="singUp" style="display: none;">
+            <p>Create New Account</p>
+            <input id="signUpName" type="text" placeholder="Full Name" />
+            <input id="signUpEmail" type="email" placeholder="Enter Your Email" />
+            <input id="signUpPassword" type="password" placeholder="Password" />
+            <div class="inputBtn">
+                <button onclick="register()">Register</button>
+                <button id="closeUpBtn" onclick="closeForms()">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/javaScript.js"></script>
+</body>
+
+</html>
