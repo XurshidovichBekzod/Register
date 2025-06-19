@@ -11,34 +11,6 @@ function showSignUp() {
 function closeForms() {
     document.querySelector(".singIn").style.display = "none";
     document.querySelector(".singUp").style.display = "none";
-}
-
-function signINfunc() {
-    const nameEl = document.getElementById("singInName").value;
-    const emailEl = document.getElementById("singInEmail").value;
-    const passwordEl = document.getElementById("singInPassword").value;
-
-    if (nameEl && emailEl && passwordEl) {
-        localStorage.setItem("user", JSON.stringify({ nameEl, emailEl, passwordEl }));
-        alert("Ro'yxatdan o'tdingiz!");
-    } else {
-        alert("Barcha ma'lumotlaringizni kiriting iltimos!");
-    }
-}
-
-function showSignIn() {
-    document.querySelector(".singIn").style.display = "block";
-    document.querySelector(".singUp").style.display = "none";
-}
-
-function showSignUp() {
-    document.querySelector(".singIn").style.display = "none";
-    document.querySelector(".singUp").style.display = "block";
-}
-
-function closeForms() {
-    document.querySelector(".singIn").style.display = "none";
-    document.querySelector(".singUp").style.display = "none";
     document.getElementById("resultText").innerText = "";
 }
 
