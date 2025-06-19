@@ -54,11 +54,11 @@ function signINfunc() {
     }
 
     if (emailEl === savedUser.email && passwordEl === savedUser.password) {
-        document.getElementById("resultText").innerText = "✅ To'g'ri!";
-        document.getElementById("resultText").style.color = "green";
+        document.getElementById("resultText").innerText = "To'g'ri!";
+        document.getElementById("resultText").style.color = "wihite";
     } else {
-        document.getElementById("resultText").innerText = "❌ Xato!";
-        document.getElementById("resultText").style.color = "red";
+        document.getElementById("resultText").innerText = "Xato!";
+        document.getElementById("resultText").style.color = "white";
     }
 }
 
